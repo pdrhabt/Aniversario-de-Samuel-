@@ -87,18 +87,5 @@ const quizQuestions = [
     }
   }
   
-  // Função para "baixar" o certificado
-  function downloadCertificate() {
-    // Criar um link para download da imagem
-    const link = document.createElement("a")
-    link.href = "images/friendship-certificate.png" // Caminho para a imagem do certificado
-    link.download = "Certificado_de_Amizade_Pedro_e_Samuel.png"
-  
-    // Adicionar o link ao documento, clicar nele e depois remover
-    document.body.appendChild(link)
-    link.click()
-    document.body.removeChild(link)
-  }
-  
   // Inicializar o quiz quando a página carregar
   document.addEventListener("DOMContentLoaded", initQuiz)
